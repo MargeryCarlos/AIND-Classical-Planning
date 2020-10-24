@@ -19,6 +19,7 @@ class ActionLayer(BaseActionLayer):
         --------
         layers.ActionNode
         """
+        # DONE: implement this function
         for effect in actionB.effects:
             if ~effect in actionA.effects:
                 return True
@@ -28,7 +29,6 @@ class ActionLayer(BaseActionLayer):
                 return True
 
         return False
-        # DONE: implement this function
         #raise NotImplementedError
 
 
@@ -43,7 +43,7 @@ class ActionLayer(BaseActionLayer):
         --------
         layers.ActionNode
         """
-        # TODO: implement this function
+        # DONE: implement this function
         for effect in actionA.effects:
             if ~effect in actionB.preconditions:
                 return True
@@ -62,7 +62,7 @@ class ActionLayer(BaseActionLayer):
         layers.ActionNode
         layers.BaseLayer.parent_layer
         """
-        # TODO: implement this function
+        # DONE: implement this function
         for precondA in actionA.preconditions:
             for precondB in actionB.preconditions:
                 if(self.parent_layer.is_mutex(precondA,precondB)):
@@ -84,7 +84,7 @@ class LiteralLayer(BaseLiteralLayer):
         --------
         layers.BaseLayer.parent_layer
         """
-        # TODO: implement this function
+        # DONE: implement this function
         for a in self.parents[literalA]:
             for b in self.parents[literalB]:
                 if (self.parent_layer.is_mutex(a,b) is False):
@@ -94,7 +94,7 @@ class LiteralLayer(BaseLiteralLayer):
 
     def _negation(self, literalA, literalB):
         """ Return True if two literals are negations of each other """
-        # TODO: implement this function
+        # DONE: implement this function
         if literalA == ~literalB:
             return True
         return False
@@ -174,7 +174,7 @@ class PlanningGraph:
         --------
         Russell-Norvig 10.3.1 (3rd Edition)
         """
-        # TODO: implement this function
+        # DONE: implement this function
         costs = {} 
         self.fill()
         for goalL in self.goal: 
@@ -209,7 +209,7 @@ class PlanningGraph:
         -----
         WARNING: you should expect long runtimes using this heuristic with A*
         """
-        # TODO: implement maxlevel heuristic
+        # DONE: implement maxlevel heuristic
         costs = {} 
         self.fill()
         for goalL in self.goal: 
@@ -239,7 +239,7 @@ class PlanningGraph:
         -----
         WARNING: you should expect long runtimes using this heuristic on complex problems
         """
-        # TODO: implement setlevel heuristic
+        # DONE: implement setlevel heuristic
         self.fill()
         for loc, layer in enumerate(self.literal_layers):
             allGoalsMet = True
