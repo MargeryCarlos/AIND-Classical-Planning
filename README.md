@@ -1,3 +1,5 @@
+## Note from Margery
+This readme includes the instructions to Udacity's project from their AI nanodegree program that I already completed. If you want to follow their instructions here you can, although my answers are already in this repo's my_planning_graph.py and report.pdf so you might want to go to Udacity's repo and start from there instead. You can find their repo [here](https://github.com/udacity/artificial-intelligence/tree/master/Projects/2_Classical%20Planning) or [here](https://github.com/udacity/AIND-Planning) if you would like to clone the original project and complete it yourself. 
 
 ## Introduction
 Planning is an important topic in AI because intelligent agents are expected to automatically plan their own actions in uncertain domains. Planning and scheduling systems are commonly used in automation and logistics operations, robotics and self-driving cars, and for aerospace applications like the Hubble telescope and NASA Mars rovers.
